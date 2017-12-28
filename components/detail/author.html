@@ -272,6 +272,7 @@
 .c-author__meta {
   @apply --typeset-label;
 
+  display: inline-block;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -284,6 +285,10 @@
     color: white !important;
     background-color: black !important;
   }
+
+  .c-author:hover &amp; {
+    text-decoration: underline color(white a(66%));
+  }
 }
 
 .c-author__image {
@@ -291,10 +296,14 @@
   height: auto;
   width: 100%;
   transition: transform $author-duration ease-out;
-}
 
-.c-author:hover .c-author__image {
-  transform: scale(1.1);
+  .c-author:hover &amp; {
+    transform: scale(1.1);
+
+    @media (prefers-reduced-motion) {
+      transform: none;
+    }
+  }
 }
 </pre>
                             </code>
@@ -312,7 +321,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">568 Bytes</span>
+                    <span class="Meta-value">731 Bytes</span>
                 </li>
             </ul>
         </div>
