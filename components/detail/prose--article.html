@@ -309,6 +309,10 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> /&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Those of us with particularly long memories might recall a time before <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span>, when we’d have to use JavaScript to perform image rollovers. As <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Cascading Style Sheets"</span>&gt;</span>CSS<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span> background images
         weren’t a practical reality, we would use lots of <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>&amp;lt;img&amp;gt;<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> elements, and perform a rollover by modifying the <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>src<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> attribute of the image.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pull-right"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://media.24ways.org/2013/baxter/indexcards.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Index cards"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>Index cards represent each feature the rental property software would launch with.<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Turns out, this old trick of modifying the source can help us out with video, too. In most cases, modifying the <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>src<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> attribute of a <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>&amp;lt;video&amp;gt;<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> element, or perhaps more likely the <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>src<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span> attribute of a <span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>source<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span>        element, will swap from one video to another.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Swappin’ it<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Let’s take a deliberately simple example of a super-basic video tag:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -562,7 +566,7 @@
       <span class="hljs-number">199</span>
     ]
   },
-  <span class="hljs-attr">"content"</span>: <span class="hljs-string">"&lt;p class=\"lede\"&gt;Video is a bigger part of the web experience than ever before. With native browser support for &lt;span class=\"caps\"&gt;HTML5&lt;/span&gt; video elements freeing us from the tyranny of plugins, and the availability of faster &lt;strong&gt;internet&lt;/strong&gt; connections to the workplace, home and mobile networks, it’s now pretty straightforward to publish video in a way that can be consumed in all sorts of ways on all sorts of different web devices.&lt;/p&gt;\n\nI recently worked on a project where the client had shot some dedicated video shorts to publish on their site. They also had some &lt;strong&gt;five-second&lt;/strong&gt; motion graphics produced to top and tail the videos with context and branding. This pretty common requirement is a great idea on the web, where a user might land at your video having followed a link and be viewing a page without much context.\n\n&lt;blockquote&gt;\n&lt;p&gt;[I]t appears probable that the progenitors of man, either the males or females or both sexes, before acquiring the power of expressing their mutual love in articulate language, endeavoured to charm each other with musical notes and rhythm.&lt;/p&gt;\n&lt;footer&gt;—Charles &lt;span class=\"caps\"&gt;DARWIN&lt;/span&gt;, &lt;cite&gt;The Descent of Man, and Selection in Relation to Sex&lt;/cite&gt;, 1871&lt;/footer&gt;\n&lt;/blockquote&gt;\n\nKnown as _bumpers_, these short introduction clips help brand a video and make it look a lot more professional.\n\n&lt;figure&gt;\n  &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n  &lt;figcaption&gt;Index cards represent each feature the rental property software would launch with.&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;figure&gt;\n  &lt;div class=\"s-gallery\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n  &lt;/div&gt;\n  &lt;figcaption&gt;Index cards represent each feature the rental property software would launch with.&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;figure&gt;\n  &lt;div class=\"s-gallery\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n  &lt;/div&gt;\n  &lt;figcaption&gt;Index cards represent each feature the rental property software would launch with.&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;figure&gt;\n  &lt;div class=\"s-gallery\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n  &lt;/div&gt;\n  &lt;figcaption&gt;Index cards represent each feature the rental property software would launch with.&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n## Heading 2\nThe simplest way to add bumpers to a video would be to edit them on to the start and end of the video file itself. Cooking the bumpers into the video file is easy, but should you ever want to update them it can become a real headache. If the branding needs updating, for example, you'd need to re-edit and re-encode all your videos. Not a fun task.\n\nSave the document by pressing &lt;kbd&gt;&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;S&lt;/kbd&gt;&lt;/kbd&gt;\n\nThere are many, many options for recording your screen, including QuickTime Player on Mac OS X (&lt;kbd&gt;&lt;kbd&gt;&lt;samp&gt;File&lt;/samp&gt;&lt;/kbd&gt; → &lt;kbd&gt;&lt;samp&gt;New Screen Recording&lt;/samp&gt;&lt;/kbd&gt;&lt;/kbd&gt;), &lt;a href=\"http://www.gifgrabber.com/\"&gt;GifGrabber&lt;/a&gt;, or &lt;a href=\"http://giffingtool.com\"&gt;Giffing Tool&lt;/a&gt; on Windows.\n\nJust &lt;samp&gt;sample&lt;/samp&gt; text.\n\n## Heading 2…\n### …followed by a heading 3\nWhat if the bumpers could be added dynamically? That would enable you to use the same bumper for multiple videos (decreasing download time for users who might watch more than one) and to update the bumpers whenever you wanted. You could change them seasonally, update them for special promotions, run different advertising slots, perform multivariate testing, or even target different bumpers to different users.\n\n[View an example](#)\n\n&gt; The responsive projects I've worked on have had a lot of success combining design and development into one hybrid phase, bringing the two teams into one highly collaborative group.\n&gt;\n&gt; * A list inside a blockquote\n&gt; * Is a very fine thing\n&gt;\n&gt; A lot of success combining design and development into one hybrid phase, bringing the two teams into one highly collaborative group.\n&gt;\n&gt; 1. How about an ordered list\n&gt; 2. Inside a blockquote, too?\n\n### Heading 3\nThe trade-off, of course, is that if you dynamically add your bumpers, there's a chance that a user in a given circumstance might not see the bumper. For example, if the main video feature was uploaded to YouTube, you'd have no way to control the playback. As always, you need to weigh up the pros and cons and make your choice.\n\n#### Heading 4\nIf you wanted to dynamically add bumpers to your HTML5 video, how would you go about it? That was the question I found myself needing to answer for this particular client project.\n\n##### Heading 5\nMy initial thought was to treat it just like an image slideshow. If I were building a slideshow that moved between images, I'd use CSS absolute positioning with `z-index` to stack the images up on top of each other in a pile, with the first image on top. To transition to the second image, I'd use JavaScript to fade the top image out, revealing the second image beneath it.\n\n&lt;figure&gt;\n  &lt;div class=\"s-embed s-embed--widescreen\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/QILiHiTD3uc\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n  &lt;figcaption&gt;Example of responsive video embed.&lt;/figcaption&gt;\n&lt;/figure&gt;\n\nNow that video is just a native object in the &lt;span class=\"caps\"&gt;DOM&lt;/span&gt;, just like an image, why not do the same? Stack the videos up with the opening bumper on top, listen for the video's `onended` event, and fade it out to reveal the main feature behind. Good idea, right?\n\n| The Very Best `Eggnog`         | Serves 12       | Serves 24 |\n|--------------------------------|-----------------|-----------|\n| Milk                           | 1 quart         | 2 quart   |\n| Cinnamon Sticks                | 1               | 2         |\n| Vanilla Bean, Split            | 1               | 2         |\n| Cloves                         | 5               | 10        |\n| Mace                           | 10              | 20        |\n| Egg Yolks                      | 12              | 24        |\n| Cups Sugar                     | 1 &amp;frac12; cups | 3 cups    |\n| Dark Rum                       | 1 &amp;frac12; cups | 3 cups    |\n| Brandy                         | 1 &amp;frac12; cups | 3 cups    |\n| Vanilla                        | 1 tbsp          | 2 tbsp    |\n| &lt;ul&gt;&lt;li&gt;Light Cream&lt;/li&gt;&lt;li&gt;Double Cream&lt;/li&gt;&lt;/ul&gt; | 1 quart         | 2 quart   |\n\nRemember that this is the web. It's never going to be that easy. The problem here is that many non-desktop devices use native, dedicated video players. Think about watching a video on a mobile phone -- when you play the video, the phone often goes full-screen in its native player, leaving the web page behind. There's no opportunity to fade or switch `z-index`, as the video isn't being viewed in the page. Your page is left powerless. Powerless!\n\n&lt;img src=\"https://media.24ways.org/2012/mclellan/media-player.jpg\" alt=\"iOS full-screen media player\" /&gt;\n\nSo what can we do? What can we control?\n\n***\n\nThose of us with particularly long memories might recall a time before CSS, when we'd have to use JavaScript to perform image rollovers. As CSS background images weren't a practical reality, we would use lots of `&lt;img&gt;` elements, and perform a rollover by modifying the `src` attribute of the image.\n\nTurns out, this old trick of modifying the source can help us out with video, too. In most cases, modifying the `src` attribute of a `&lt;video&gt;` element, or perhaps more likely the `src` attribute of a `source` element, will swap from one video to another.\n\n## Swappin' it\nLet's take a deliberately simple example of a super-basic video tag:\n\n```html\n&lt;video src=\"mycat.webm\" controls&gt;no fallback coz i is lame, innit.&lt;/video&gt;\n```\n\nWe could very simply write a script to find all video tags and give them a new `src` to show our bumper.\n\n```html\n&lt;script&gt;\n  var videos, i, l;\n  videos = document.getElementsByTagName('video');\n\n  for(i=0, l=videos.length; i&lt;l; i++) {\n    videos[i].setAttribute('src', 'bumper-in.webm');\n  }\n&lt;/script&gt;\n```\n\n[View the example](https://media.24ways.org/2012/mclellan/examples/1.html) in a browser with WebM support. You'll see that the video is swapped out for the opening bumper. Great!\n\n## Beefing it up\nOf course, we can't just publish video in one format. In practical use, you need a `&lt;video&gt;` element with multiple `&lt;source&gt;` elements containing your different source formats.\n\n```html\n&lt;video controls&gt;\n  &lt;source src=\"mycat.mp4\" type=\"video/mp4\" /&gt;\n  &lt;source src=\"mycat.webm\" type=\"video/webm\" /&gt;\n  &lt;source src=\"mycat.ogv\" type=\"video/ogg\" /&gt;\n&lt;/video&gt;\n```\n\nThis time, our script needs to loop through the sources, not the videos. We'll use a regular expression replacement to swap out the file name while maintaining the correct file extension.\n\n```html\n&lt;script&gt;\n  var sources, i, l, orig;\n  sources = document.getElementsByTagName('source');\n\n  for(i=0, l=sources.length; i&lt;l; i++) {\n    orig = sources[i].getAttribute('src');\n    sources[i].setAttribute('src', orig.replace(/(w+).(w+)/, 'bumper-in.$2'));\n\n    // Reload the video\n    sources[i].parentNode.load();\n  }\n&lt;/script&gt;\n```\n\nThe difference this time is that when changing the `src` of a `&lt;source&gt;` we need to call the `.load()` method on the video to get it to acknowledge the change.\n\n[See the code in action](https://media.24ways.org/2012/mclellan/examples/2.html), this time in a wider range of browsers.\n\n## But, my video!\n* Store the original `src` in a `data-` attribute so we can access it later\n* Add an event listener so we can detect the end of the bumper playing, and load the original video back in\n\nI guess we should get the original video playing again. Keeping the same markup, we need to modify the script to do two things:\n\n* Store the original `src` in a `data-` attribute so we can access it later\n* Add an event listener so we can detect the end of the bumper playing, and load the original video back in\n\nAs we need to loop through the videos this time to add the event listener, I've moved the `.load()` call into that loop. It's a bit more efficient to call it only once after modifying all the video's sources.\n\n* **Raspberry Pi** any of the following models :\n  * Zero (will need straight male header pins soldered2 and Micro USB OTG adaptor),\n    * A+, B+, 2 or 3\n* **Micro SD card** at least 4Gb Class 10 speed3\n* **Micro USB power supply** at least 2A\n* **USB Wifi dongle** (unless you have a Pi 3 - that has wifi built in).\n\n```html\n&lt;script&gt;\n  var videos, sources, i, l, orig;\n  sources = document.getElementsByTagName('source');\n\n  for(i=0, l=sources.length; i&lt;l; i++) {\n    orig = sources[i].getAttribute('src');\n    sources[i].setAttribute('data-orig', orig);\n    sources[i].setAttribute('src', orig.replace(/(w+).(w+)/, 'bumper-in.$2'));\n  }\n\n  videos = document.getElementsByTagName('video');\n\n  for(i=0, l=videos.length; i&lt;l; i++) {\n    videos[i].load();\n    videos[i].addEventListener('ended', function(){\n      sources = this.getElementsByTagName('source');\n      for(i=0, l=sources.length; i&lt;l; i++) {\n        orig = sources[i].getAttribute('data-orig');\n        if (orig) {\n          sources[i].setAttribute('src', orig);\n        }\n        sources[i].setAttribute('data-orig','');\n      }\n      this.load();\n      this.play();\n    });\n  }\n&lt;/script&gt;\n```\n\nAgain, [view the example](https://media.24ways.org/2012/mclellan/examples/3.html) to see the bumper play, followed by our spectacular main feature. (That's my cat, Widget. His interests include sleeping and internet marketing.)\n\n## Tidying things up\nThe final thing to do is add our closing bumper after the main video has played. This involves the following changes:\n\n1. We need to keep track of whether the `src` has been changed, so we only play the video if it's changed. I've added the `modified` variable to track this, and it stops us getting into a situation where the video just loops forever.\n2. Add an `else` to the event listener, for when the `orig` is false (so the main feature has been playing) to load in the end bumper. We also check that we're not already playing the end bumper. Because looping.\n\n```html\n&lt;script&gt;\n  var videos, sources, i, l, orig, current, modified;\n  sources = document.getElementsByTagName('source');\n\n  for(i=0, l=sources.length; i&lt;l; i++) {\n    orig = sources[i].getAttribute('src');\n    sources[i].setAttribute('data-orig', orig);\n    sources[i].setAttribute('src', orig.replace(/(w+).(w+)/, 'bumper-in.$2'));\n  }\n\n  videos = document.getElementsByTagName('video');\n\n  for(i=0, l=videos.length; i&lt;l; i++) {\n    videos[i].load();\n    modified = false;\n\n    videos[i].addEventListener('ended', function(){\n      sources = this.getElementsByTagName('source');\n\n      for(i=0, l=sources.length; i&lt;l; i++) {\n        orig = sources[i].getAttribute('data-orig');\n        if (orig) {\n          sources[i].setAttribute('src', orig);\n          modified = true;\n        } else {\n          current = sources[i].getAttribute('src');\n          if (current.indexOf('bumper-out')==-1) {\n            sources[i].setAttribute('src', current.replace(/([w]+).(w+)/, 'bumper-out.$2'));\n            modified = true;\n          } else {\n            this.pause();\n            modified = false;\n          }\n        }\n        sources[i].setAttribute('data-orig','');\n      }\n\n      if (modified) {\n        this.load();\n        this.play();\n      }\n    });\n  }\n&lt;/script&gt;\n```\n\nYo ho ho, that's a lot of JavaScript. [See it in action](https://media.24ways.org/2012/mclellan/examples/4.html) -- you should get a bumper, the cat video, and an end bumper.\n\nOf course, this code works fine for demonstrating the principle, but it's very procedural. Nothing wrong with that, but to do something similar in production, you'd probably want to make the code more modular to ease maintainability. Besides, you may want to use a framework, rather than basic JavaScript.\n\n## The end credits\nOne really important principle here is that of **progressive enhancement**. If the browser doesn't support JavaScript, the user won't see your bumper, but they will get the main video. If the browser supports JavaScript but doesn't allow you to modify the `src` (as was the case with older versions of iOS), the user won't see your bumper, but they will get the main video.\n\nAt Twitter, *every commit* gets a code review. We do a lot of reviewing, so small efficiency and effectiveness improvements make a big difference. Over time we've learnt a few things:\n\n* Don't review for *more than hour*[^1]\n* Keep reviews *smaller than ~400 lines*[^2]\n\n[^1]: Dunsmore et al. 2000. Object-Oriented Inspection in the Face of Delocalisation. Beverly, MA: SmartBear Software.\n\n[^2]: Cohen, Jason. 2006. Best Kept Secrets of Peer Code Review. *Proceedings of the 22nd ICSE 2000*: 467-476.\n\nIf a search engine or social media bot grabs your page and looks for content, they won't see your bumper, but they will get the main video -- which is absolutely what you want.\n\nThis means that if the bumper is absolutely crucial, you may still need to cook it into the video. However, for many applications, running it dynamically can work quite well.\n\nAs always, it comes down to three things:\n\n1. Measure your audience: know how people access your site\n2. Test the solution: make sure it works for your audience\n3. Plan for failure: it's the web and that's how things work 'round these parts\n\nBut most of all **play around with it, have fun and build something awesome**.\n\n*[CSS]: Cascading Style Sheets\n*[HTML5]: Hyper Text Markup Language 5\n"</span>,
+  <span class="hljs-attr">"content"</span>: <span class="hljs-string">"&lt;p class=\"lede\"&gt;Video is a bigger part of the web experience than ever before. With native browser support for &lt;span class=\"caps\"&gt;HTML5&lt;/span&gt; video elements freeing us from the tyranny of plugins, and the availability of faster &lt;strong&gt;internet&lt;/strong&gt; connections to the workplace, home and mobile networks, it’s now pretty straightforward to publish video in a way that can be consumed in all sorts of ways on all sorts of different web devices.&lt;/p&gt;\n\nI recently worked on a project where the client had shot some dedicated video shorts to publish on their site. They also had some &lt;strong&gt;five-second&lt;/strong&gt; motion graphics produced to top and tail the videos with context and branding. This pretty common requirement is a great idea on the web, where a user might land at your video having followed a link and be viewing a page without much context.\n\n&lt;blockquote&gt;\n&lt;p&gt;[I]t appears probable that the progenitors of man, either the males or females or both sexes, before acquiring the power of expressing their mutual love in articulate language, endeavoured to charm each other with musical notes and rhythm.&lt;/p&gt;\n&lt;footer&gt;—Charles &lt;span class=\"caps\"&gt;DARWIN&lt;/span&gt;, &lt;cite&gt;The Descent of Man, and Selection in Relation to Sex&lt;/cite&gt;, 1871&lt;/footer&gt;\n&lt;/blockquote&gt;\n\nKnown as _bumpers_, these short introduction clips help brand a video and make it look a lot more professional.\n\n&lt;figure&gt;\n  &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n  &lt;figcaption&gt;Index cards represent each feature the rental property software would launch with.&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;figure&gt;\n  &lt;div class=\"s-gallery\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n  &lt;/div&gt;\n  &lt;figcaption&gt;Index cards represent each feature the rental property software would launch with.&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;figure&gt;\n  &lt;div class=\"s-gallery\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n  &lt;/div&gt;\n  &lt;figcaption&gt;Index cards represent each feature the rental property software would launch with.&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n&lt;figure&gt;\n  &lt;div class=\"s-gallery\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n    &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n  &lt;/div&gt;\n  &lt;figcaption&gt;Index cards represent each feature the rental property software would launch with.&lt;/figcaption&gt;\n&lt;/figure&gt;\n\n## Heading 2\nThe simplest way to add bumpers to a video would be to edit them on to the start and end of the video file itself. Cooking the bumpers into the video file is easy, but should you ever want to update them it can become a real headache. If the branding needs updating, for example, you'd need to re-edit and re-encode all your videos. Not a fun task.\n\nSave the document by pressing &lt;kbd&gt;&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;S&lt;/kbd&gt;&lt;/kbd&gt;\n\nThere are many, many options for recording your screen, including QuickTime Player on Mac OS X (&lt;kbd&gt;&lt;kbd&gt;&lt;samp&gt;File&lt;/samp&gt;&lt;/kbd&gt; → &lt;kbd&gt;&lt;samp&gt;New Screen Recording&lt;/samp&gt;&lt;/kbd&gt;&lt;/kbd&gt;), &lt;a href=\"http://www.gifgrabber.com/\"&gt;GifGrabber&lt;/a&gt;, or &lt;a href=\"http://giffingtool.com\"&gt;Giffing Tool&lt;/a&gt; on Windows.\n\nJust &lt;samp&gt;sample&lt;/samp&gt; text.\n\n## Heading 2…\n### …followed by a heading 3\nWhat if the bumpers could be added dynamically? That would enable you to use the same bumper for multiple videos (decreasing download time for users who might watch more than one) and to update the bumpers whenever you wanted. You could change them seasonally, update them for special promotions, run different advertising slots, perform multivariate testing, or even target different bumpers to different users.\n\n[View an example](#)\n\n&gt; The responsive projects I've worked on have had a lot of success combining design and development into one hybrid phase, bringing the two teams into one highly collaborative group.\n&gt;\n&gt; * A list inside a blockquote\n&gt; * Is a very fine thing\n&gt;\n&gt; A lot of success combining design and development into one hybrid phase, bringing the two teams into one highly collaborative group.\n&gt;\n&gt; 1. How about an ordered list\n&gt; 2. Inside a blockquote, too?\n\n### Heading 3\nThe trade-off, of course, is that if you dynamically add your bumpers, there's a chance that a user in a given circumstance might not see the bumper. For example, if the main video feature was uploaded to YouTube, you'd have no way to control the playback. As always, you need to weigh up the pros and cons and make your choice.\n\n#### Heading 4\nIf you wanted to dynamically add bumpers to your HTML5 video, how would you go about it? That was the question I found myself needing to answer for this particular client project.\n\n##### Heading 5\nMy initial thought was to treat it just like an image slideshow. If I were building a slideshow that moved between images, I'd use CSS absolute positioning with `z-index` to stack the images up on top of each other in a pile, with the first image on top. To transition to the second image, I'd use JavaScript to fade the top image out, revealing the second image beneath it.\n\n&lt;figure&gt;\n  &lt;div class=\"s-embed s-embed--widescreen\"&gt;\n    &lt;iframe src=\"https://www.youtube.com/embed/QILiHiTD3uc\" allowfullscreen&gt;&lt;/iframe&gt;\n  &lt;/div&gt;\n  &lt;figcaption&gt;Example of responsive video embed.&lt;/figcaption&gt;\n&lt;/figure&gt;\n\nNow that video is just a native object in the &lt;span class=\"caps\"&gt;DOM&lt;/span&gt;, just like an image, why not do the same? Stack the videos up with the opening bumper on top, listen for the video's `onended` event, and fade it out to reveal the main feature behind. Good idea, right?\n\n| The Very Best `Eggnog`         | Serves 12       | Serves 24 |\n|--------------------------------|-----------------|-----------|\n| Milk                           | 1 quart         | 2 quart   |\n| Cinnamon Sticks                | 1               | 2         |\n| Vanilla Bean, Split            | 1               | 2         |\n| Cloves                         | 5               | 10        |\n| Mace                           | 10              | 20        |\n| Egg Yolks                      | 12              | 24        |\n| Cups Sugar                     | 1 &amp;frac12; cups | 3 cups    |\n| Dark Rum                       | 1 &amp;frac12; cups | 3 cups    |\n| Brandy                         | 1 &amp;frac12; cups | 3 cups    |\n| Vanilla                        | 1 tbsp          | 2 tbsp    |\n| &lt;ul&gt;&lt;li&gt;Light Cream&lt;/li&gt;&lt;li&gt;Double Cream&lt;/li&gt;&lt;/ul&gt; | 1 quart         | 2 quart   |\n\nRemember that this is the web. It's never going to be that easy. The problem here is that many non-desktop devices use native, dedicated video players. Think about watching a video on a mobile phone -- when you play the video, the phone often goes full-screen in its native player, leaving the web page behind. There's no opportunity to fade or switch `z-index`, as the video isn't being viewed in the page. Your page is left powerless. Powerless!\n\n&lt;img src=\"https://media.24ways.org/2012/mclellan/media-player.jpg\" alt=\"iOS full-screen media player\" /&gt;\n\nSo what can we do? What can we control?\n\n***\n\nThose of us with particularly long memories might recall a time before CSS, when we'd have to use JavaScript to perform image rollovers. As CSS background images weren't a practical reality, we would use lots of `&lt;img&gt;` elements, and perform a rollover by modifying the `src` attribute of the image.\n\n&lt;figure class=\"pull-right\"&gt;\n  &lt;img src=\"https://media.24ways.org/2013/baxter/indexcards.jpg\" alt=\"Index cards\"&gt;\n  &lt;figcaption&gt;Index cards represent each feature the rental property software would launch with.&lt;/figcaption&gt;\n&lt;/figure&gt;\n\nTurns out, this old trick of modifying the source can help us out with video, too. In most cases, modifying the `src` attribute of a `&lt;video&gt;` element, or perhaps more likely the `src` attribute of a `source` element, will swap from one video to another.\n\n## Swappin' it\nLet's take a deliberately simple example of a super-basic video tag:\n\n```html\n&lt;video src=\"mycat.webm\" controls&gt;no fallback coz i is lame, innit.&lt;/video&gt;\n```\n\nWe could very simply write a script to find all video tags and give them a new `src` to show our bumper.\n\n```html\n&lt;script&gt;\n  var videos, i, l;\n  videos = document.getElementsByTagName('video');\n\n  for(i=0, l=videos.length; i&lt;l; i++) {\n    videos[i].setAttribute('src', 'bumper-in.webm');\n  }\n&lt;/script&gt;\n```\n\n[View the example](https://media.24ways.org/2012/mclellan/examples/1.html) in a browser with WebM support. You'll see that the video is swapped out for the opening bumper. Great!\n\n## Beefing it up\nOf course, we can't just publish video in one format. In practical use, you need a `&lt;video&gt;` element with multiple `&lt;source&gt;` elements containing your different source formats.\n\n```html\n&lt;video controls&gt;\n  &lt;source src=\"mycat.mp4\" type=\"video/mp4\" /&gt;\n  &lt;source src=\"mycat.webm\" type=\"video/webm\" /&gt;\n  &lt;source src=\"mycat.ogv\" type=\"video/ogg\" /&gt;\n&lt;/video&gt;\n```\n\nThis time, our script needs to loop through the sources, not the videos. We'll use a regular expression replacement to swap out the file name while maintaining the correct file extension.\n\n```html\n&lt;script&gt;\n  var sources, i, l, orig;\n  sources = document.getElementsByTagName('source');\n\n  for(i=0, l=sources.length; i&lt;l; i++) {\n    orig = sources[i].getAttribute('src');\n    sources[i].setAttribute('src', orig.replace(/(w+).(w+)/, 'bumper-in.$2'));\n\n    // Reload the video\n    sources[i].parentNode.load();\n  }\n&lt;/script&gt;\n```\n\nThe difference this time is that when changing the `src` of a `&lt;source&gt;` we need to call the `.load()` method on the video to get it to acknowledge the change.\n\n[See the code in action](https://media.24ways.org/2012/mclellan/examples/2.html), this time in a wider range of browsers.\n\n## But, my video!\n* Store the original `src` in a `data-` attribute so we can access it later\n* Add an event listener so we can detect the end of the bumper playing, and load the original video back in\n\nI guess we should get the original video playing again. Keeping the same markup, we need to modify the script to do two things:\n\n* Store the original `src` in a `data-` attribute so we can access it later\n* Add an event listener so we can detect the end of the bumper playing, and load the original video back in\n\nAs we need to loop through the videos this time to add the event listener, I've moved the `.load()` call into that loop. It's a bit more efficient to call it only once after modifying all the video's sources.\n\n* **Raspberry Pi** any of the following models :\n  * Zero (will need straight male header pins soldered2 and Micro USB OTG adaptor),\n    * A+, B+, 2 or 3\n* **Micro SD card** at least 4Gb Class 10 speed3\n* **Micro USB power supply** at least 2A\n* **USB Wifi dongle** (unless you have a Pi 3 - that has wifi built in).\n\n```html\n&lt;script&gt;\n  var videos, sources, i, l, orig;\n  sources = document.getElementsByTagName('source');\n\n  for(i=0, l=sources.length; i&lt;l; i++) {\n    orig = sources[i].getAttribute('src');\n    sources[i].setAttribute('data-orig', orig);\n    sources[i].setAttribute('src', orig.replace(/(w+).(w+)/, 'bumper-in.$2'));\n  }\n\n  videos = document.getElementsByTagName('video');\n\n  for(i=0, l=videos.length; i&lt;l; i++) {\n    videos[i].load();\n    videos[i].addEventListener('ended', function(){\n      sources = this.getElementsByTagName('source');\n      for(i=0, l=sources.length; i&lt;l; i++) {\n        orig = sources[i].getAttribute('data-orig');\n        if (orig) {\n          sources[i].setAttribute('src', orig);\n        }\n        sources[i].setAttribute('data-orig','');\n      }\n      this.load();\n      this.play();\n    });\n  }\n&lt;/script&gt;\n```\n\nAgain, [view the example](https://media.24ways.org/2012/mclellan/examples/3.html) to see the bumper play, followed by our spectacular main feature. (That's my cat, Widget. His interests include sleeping and internet marketing.)\n\n## Tidying things up\nThe final thing to do is add our closing bumper after the main video has played. This involves the following changes:\n\n1. We need to keep track of whether the `src` has been changed, so we only play the video if it's changed. I've added the `modified` variable to track this, and it stops us getting into a situation where the video just loops forever.\n2. Add an `else` to the event listener, for when the `orig` is false (so the main feature has been playing) to load in the end bumper. We also check that we're not already playing the end bumper. Because looping.\n\n```html\n&lt;script&gt;\n  var videos, sources, i, l, orig, current, modified;\n  sources = document.getElementsByTagName('source');\n\n  for(i=0, l=sources.length; i&lt;l; i++) {\n    orig = sources[i].getAttribute('src');\n    sources[i].setAttribute('data-orig', orig);\n    sources[i].setAttribute('src', orig.replace(/(w+).(w+)/, 'bumper-in.$2'));\n  }\n\n  videos = document.getElementsByTagName('video');\n\n  for(i=0, l=videos.length; i&lt;l; i++) {\n    videos[i].load();\n    modified = false;\n\n    videos[i].addEventListener('ended', function(){\n      sources = this.getElementsByTagName('source');\n\n      for(i=0, l=sources.length; i&lt;l; i++) {\n        orig = sources[i].getAttribute('data-orig');\n        if (orig) {\n          sources[i].setAttribute('src', orig);\n          modified = true;\n        } else {\n          current = sources[i].getAttribute('src');\n          if (current.indexOf('bumper-out')==-1) {\n            sources[i].setAttribute('src', current.replace(/([w]+).(w+)/, 'bumper-out.$2'));\n            modified = true;\n          } else {\n            this.pause();\n            modified = false;\n          }\n        }\n        sources[i].setAttribute('data-orig','');\n      }\n\n      if (modified) {\n        this.load();\n        this.play();\n      }\n    });\n  }\n&lt;/script&gt;\n```\n\nYo ho ho, that's a lot of JavaScript. [See it in action](https://media.24ways.org/2012/mclellan/examples/4.html) -- you should get a bumper, the cat video, and an end bumper.\n\nOf course, this code works fine for demonstrating the principle, but it's very procedural. Nothing wrong with that, but to do something similar in production, you'd probably want to make the code more modular to ease maintainability. Besides, you may want to use a framework, rather than basic JavaScript.\n\n## The end credits\nOne really important principle here is that of **progressive enhancement**. If the browser doesn't support JavaScript, the user won't see your bumper, but they will get the main video. If the browser supports JavaScript but doesn't allow you to modify the `src` (as was the case with older versions of iOS), the user won't see your bumper, but they will get the main video.\n\nAt Twitter, *every commit* gets a code review. We do a lot of reviewing, so small efficiency and effectiveness improvements make a big difference. Over time we've learnt a few things:\n\n* Don't review for *more than hour*[^1]\n* Keep reviews *smaller than ~400 lines*[^2]\n\n[^1]: Dunsmore et al. 2000. Object-Oriented Inspection in the Face of Delocalisation. Beverly, MA: SmartBear Software.\n\n[^2]: Cohen, Jason. 2006. Best Kept Secrets of Peer Code Review. *Proceedings of the 22nd ICSE 2000*: 467-476.\n\nIf a search engine or social media bot grabs your page and looks for content, they won't see your bumper, but they will get the main video -- which is absolutely what you want.\n\nThis means that if the bumper is absolutely crucial, you may still need to cook it into the video. However, for many applications, running it dynamically can work quite well.\n\nAs always, it comes down to three things:\n\n1. Measure your audience: know how people access your site\n2. Test the solution: make sure it works for your audience\n3. Plan for failure: it's the web and that's how things work 'round these parts\n\nBut most of all **play around with it, have fun and build something awesome**.\n\n*[CSS]: Cascading Style Sheets\n*[HTML5]: Hyper Text Markup Language 5\n"</span>,
   <span class="hljs-attr">"mods"</span>: [
     <span class="hljs-string">"article"</span>
   ]
@@ -600,26 +604,9 @@
                                 <pre>.s-prose {
   @apply --typeset-prose;
 
-  .caps {
-    font-variant: lining-nums small-caps;
-  }
-
-  .caption {
-    @apply --typeset-caption;
-
-    opacity: 0.9;
-  }
-
-  .lede {
-    @apply --typeset-lede;
-
-    position: relative;
-    top: calc(map(spaces, xsmall) * -1);
-    max-width: 50ch;
-  }
+  max-width: 75ch;
 
   &gt; * {
-    max-width: 75ch;
     margin-bottom: 0.75em;
   }
 
@@ -656,8 +643,8 @@
     }
   }
 
-  ol,
-  ul {
+  &gt; ol,
+  &gt; ul {
     list-style-position: inside;
 
     @media (--from-large-screen) {
@@ -665,82 +652,51 @@
     }
   }
 
+  li {
+    margin-bottom: 0.25em;
+  }
+
+  &gt; ul &gt; li {
+    list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='0.75em' height='0.75em' viewBox='0 0 2 2'%3E%3Cpolygon fill='%233F3F46' fill-opacity='.75' points='0 1 1 0 2 1 1 2'/%3E%3C/svg%3E ");
+  }
+
+  ul li {
+    list-style-type: circle;
+  }
+
   ol li {
     list-style-type: decimal;
   }
 
-  ul li {
-    list-style-type: square;
-
-    li {
-      list-style-type: circle;
-    }
-  }
-
-  &gt; ul &gt; li {
-    position: relative;
-    padding-left: 1em;
-    list-style: none outside;
-
-    @media (--from-large-screen) {
-      padding-left: 0;
-    }
-
-    &amp;::before {
-      content: '';
-      background-color: color($color-text a(0.75));
-      width: 0.5rem;
-      height: 0.5rem;
-      position: absolute;
-      left: 0;
-      top: 0.5em;
-      transform: rotate(45deg);
-      transform-origin: 50% 50%;
-
-      @media (--from-large-screen) {
-        left: -1.125em;
-      }
-    }
+  li li,
+  dd {
+    margin-left: 2em;
   }
 
   dt {
     font-weight: 700;
   }
 
-  li {
-    margin-bottom: 0.25em;
+  .caps {
+    font-variant: lining-nums small-caps;
   }
 
-  li li,
-  dd {
-    margin-left: 1.5em;
+  .caption {
+    @apply --typeset-caption;
+
+    opacity: 0.9;
   }
 
-  li &gt; *,
-  dd &gt; * {
-    margin-top: 0;
+  .lede {
+    @apply --typeset-lede;
+
+    position: relative;
+    top: calc(map(spaces, xsmall) * -1);
   }
 }
 
 .s-prose--article {
   @apply --typescale-prose;
-
-  .lede {
-    max-width: 62.5ch;
-  }
-
-  .footnotes {
-    @apply --typeset-caption;
-
-    li {
-      margin-bottom: map(spaces, small);
-    }
-
-    a:last-of-type {
-      /* Chrome doesn’t seem to use fallback glyph in font stack */
-      font-family: sans-serif;
-    }
-  }
 
   &gt; *:first-child {
     margin-top: 0;
@@ -770,10 +726,6 @@
     font-weight: 700;
   }
 
-  h2 + h3 {
-    margin-top: 0;
-  }
-
   h2,
   h3 {
     color: $color-day--dark;
@@ -783,6 +735,10 @@
   h3 {
     font-size: 1.25em;
     opacity: 0.9;
+  }
+
+  h2 + h3 {
+    margin-top: 0;
   }
 
   h4 {
@@ -818,12 +774,9 @@
     &gt; p,
     &gt; ul,
     &gt; ol {
+      margin-bottom: 0.75em;
       font-size: 1.125em;
       line-height: 1.25;
-      margin-bottom: 0.75em;
-    }
-
-    li {
       list-style-position: inside;
     }
 
@@ -842,6 +795,10 @@
     @media (--from-large-screen) {
       margin-left: 0;
       margin-right: 0;
+    }
+
+    @media (--from-max-screen) {
+      margin-right: -20%;
     }
   }
 
@@ -942,6 +899,28 @@
       background: none;
     }
   }
+
+  .pull-right {
+    @media (--from-large-screen) {
+      width: 40%;
+      float: right;
+      margin-top: 0;
+      margin-left: map(spaces, large);
+    }
+  }
+
+  .footnotes {
+    @apply --typeset-caption;
+
+    li {
+      margin-bottom: map(spaces, small);
+    }
+
+    a:last-of-type {
+      /* Chrome doesn’t seem to use fallback glyph in font stack */
+      font-family: sans-serif;
+    }
+  }
 }
 </pre>
                             </code>
@@ -959,7 +938,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">5.8 KB</span>
+                    <span class="Meta-value">5.6 KB</span>
                 </li>
             </ul>
         </div>

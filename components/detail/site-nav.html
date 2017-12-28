@@ -311,16 +311,12 @@
   padding: map(spaces, small);
   text-align: center;
 
-  .no-js &amp; {
-    box-shadow: 1px 0 0 $navigation-color--offset;
-  }
-
   &amp;:focus {
     position: relative; /* Fix border overlap on focus */
   }
 
-  @media (-ms-high-contrast:active) {
-    border: 1px solid;
+  .no-js &amp; {
+    box-shadow: 1px 0 0 $navigation-color--offset;
   }
 
   @media (--from-shallow-screen) {
@@ -330,6 +326,10 @@
   @media (--from-medium-screen) {
     box-shadow: 0 -1px 0 $navigation-color--offset;
     text-align: left;
+  }
+
+  @media (-ms-high-contrast: active) {
+    border: 1px solid;
   }
 }
 </pre>
@@ -348,7 +348,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">894 Bytes</span>
+                    <span class="Meta-value">895 Bytes</span>
                 </li>
             </ul>
         </div>

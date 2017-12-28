@@ -249,6 +249,9 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-menu__onload"</span>&gt;</span><span class="javascript">
+        <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'menu__drawer'</span>).style.display = <span class="hljs-string">'none'</span>;
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -266,6 +269,9 @@
     {%- render "<a href="topics-nav">@topics-nav</a>" -%}
     {%- render "<a href="site-nav">@site-nav</a>" -%}
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-menu__onload"</span>&gt;</span><span class="javascript">
+    <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'menu__drawer'</span>).style.display = <span class="hljs-string">'none'</span>;
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
     </code>
 </div>
@@ -411,11 +417,7 @@
   z-index: calc(map(layers, modal) + 1);
 
   .no-js &amp; {
-    @apply --hidden;
-  }
-
-  @media (-ms-high-contrast:active) {
-    border: 1px solid;
+    display: none;
   }
 
   @media (--upto-medium-screen) {
@@ -433,6 +435,10 @@
 
     padding: map(spaces, medium);
     box-shadow: inset 0 -1px 0 $navigation-color--offset;
+  }
+
+  @media (-ms-high-contrast: active) {
+    border: 1px solid;
   }
 
   @media print {

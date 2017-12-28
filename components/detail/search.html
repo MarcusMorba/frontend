@@ -280,10 +280,6 @@
     padding-left: map(spaces, xlarge);
     background-color: $navigation-color--offset;
 
-    @media (-ms-high-contrast:active) {
-      border: 1px solid;
-    }
-
     &amp;:not(:focus) {
       box-shadow: none;
     }
@@ -292,6 +288,10 @@
       @media (--from-medium-screen) {
         height: $banner-height--large;
       }
+    }
+
+    @media (-ms-high-contrast: active) {
+      border: 1px solid;
     }
   }
 
@@ -326,7 +326,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">712 Bytes</span>
+                    <span class="Meta-value">713 Bytes</span>
                 </li>
             </ul>
         </div>

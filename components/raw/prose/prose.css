@@ -1,26 +1,9 @@
 .s-prose {
   @apply --typeset-prose;
 
-  .caps {
-    font-variant: lining-nums small-caps;
-  }
-
-  .caption {
-    @apply --typeset-caption;
-
-    opacity: 0.9;
-  }
-
-  .lede {
-    @apply --typeset-lede;
-
-    position: relative;
-    top: calc(map(spaces, xsmall) * -1);
-    max-width: 50ch;
-  }
+  max-width: 75ch;
 
   > * {
-    max-width: 75ch;
     margin-bottom: 0.75em;
   }
 
@@ -57,8 +40,8 @@
     }
   }
 
-  ol,
-  ul {
+  > ol,
+  > ul {
     list-style-position: inside;
 
     @media (--from-large-screen) {
@@ -66,82 +49,51 @@
     }
   }
 
+  li {
+    margin-bottom: 0.25em;
+  }
+
+  > ul > li {
+    list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='0.75em' height='0.75em' viewBox='0 0 2 2'%3E%3Cpolygon fill='%233F3F46' fill-opacity='.75' points='0 1 1 0 2 1 1 2'/%3E%3C/svg%3E ");
+  }
+
+  ul li {
+    list-style-type: circle;
+  }
+
   ol li {
     list-style-type: decimal;
   }
 
-  ul li {
-    list-style-type: square;
-
-    li {
-      list-style-type: circle;
-    }
-  }
-
-  > ul > li {
-    position: relative;
-    padding-left: 1em;
-    list-style: none outside;
-
-    @media (--from-large-screen) {
-      padding-left: 0;
-    }
-
-    &::before {
-      content: '';
-      background-color: color($color-text a(0.75));
-      width: 0.5rem;
-      height: 0.5rem;
-      position: absolute;
-      left: 0;
-      top: 0.5em;
-      transform: rotate(45deg);
-      transform-origin: 50% 50%;
-
-      @media (--from-large-screen) {
-        left: -1.125em;
-      }
-    }
+  li li,
+  dd {
+    margin-left: 2em;
   }
 
   dt {
     font-weight: 700;
   }
 
-  li {
-    margin-bottom: 0.25em;
+  .caps {
+    font-variant: lining-nums small-caps;
   }
 
-  li li,
-  dd {
-    margin-left: 1.5em;
+  .caption {
+    @apply --typeset-caption;
+
+    opacity: 0.9;
   }
 
-  li > *,
-  dd > * {
-    margin-top: 0;
+  .lede {
+    @apply --typeset-lede;
+
+    position: relative;
+    top: calc(map(spaces, xsmall) * -1);
   }
 }
 
 .s-prose--article {
   @apply --typescale-prose;
-
-  .lede {
-    max-width: 62.5ch;
-  }
-
-  .footnotes {
-    @apply --typeset-caption;
-
-    li {
-      margin-bottom: map(spaces, small);
-    }
-
-    a:last-of-type {
-      /* Chrome doesn’t seem to use fallback glyph in font stack */
-      font-family: sans-serif;
-    }
-  }
 
   > *:first-child {
     margin-top: 0;
@@ -171,10 +123,6 @@
     font-weight: 700;
   }
 
-  h2 + h3 {
-    margin-top: 0;
-  }
-
   h2,
   h3 {
     color: $color-day--dark;
@@ -184,6 +132,10 @@
   h3 {
     font-size: 1.25em;
     opacity: 0.9;
+  }
+
+  h2 + h3 {
+    margin-top: 0;
   }
 
   h4 {
@@ -219,12 +171,9 @@
     > p,
     > ul,
     > ol {
+      margin-bottom: 0.75em;
       font-size: 1.125em;
       line-height: 1.25;
-      margin-bottom: 0.75em;
-    }
-
-    li {
       list-style-position: inside;
     }
 
@@ -243,6 +192,10 @@
     @media (--from-large-screen) {
       margin-left: 0;
       margin-right: 0;
+    }
+
+    @media (--from-max-screen) {
+      margin-right: -20%;
     }
   }
 
@@ -341,6 +294,28 @@
 
     code {
       background: none;
+    }
+  }
+
+  .pull-right {
+    @media (--from-large-screen) {
+      width: 40%;
+      float: right;
+      margin-top: 0;
+      margin-left: map(spaces, large);
+    }
+  }
+
+  .footnotes {
+    @apply --typeset-caption;
+
+    li {
+      margin-bottom: map(spaces, small);
+    }
+
+    a:last-of-type {
+      /* Chrome doesn’t seem to use fallback glyph in font stack */
+      font-family: sans-serif;
     }
   }
 }
