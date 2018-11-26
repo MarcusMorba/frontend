@@ -20,6 +20,12 @@
   color: white;
 }
 
+@supports (hanging-punctuation: first) {
+  .c-og-image__quote {
+    text-indent: 0;
+  }
+}
+
 .c-og-image__quote--small {
   font-size: 1.75rem;
 }
